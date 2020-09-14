@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "6uD8xKq28N0LQQ8vvlCmQH9vimuzq39p3+ISa2LZGh0ofOVvVeGezIcVwFdxrlq+0h5cRT7O4apDeqrKBR9ubw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric\\7.1.458\\microsoft.servicefabric.7.1.458.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric.data\\4.1.458\\microsoft.servicefabric.data.4.1.458.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric.data.extensions\\4.1.458\\microsoft.servicefabric.data.extensions.4.1.458.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric.data.interfaces\\4.1.458\\microsoft.servicefabric.data.interfaces.4.1.458.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric.diagnostics.internal\\4.1.458\\microsoft.servicefabric.diagnostics.internal.4.1.458.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric.services\\4.1.458\\microsoft.servicefabric.services.4.1.458.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
