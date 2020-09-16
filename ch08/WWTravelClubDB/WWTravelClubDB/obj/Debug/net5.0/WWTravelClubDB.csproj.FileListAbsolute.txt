@@ -1,0 +1,15 @@
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\WWTravelClubDB.deps.json
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\WWTravelClubDB.runtimeconfig.json
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\WWTravelClubDB.runtimeconfig.dev.json
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\WWTravelClubDB.dll
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\ref\WWTravelClubDB.dll
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\bin\Debug\net5.0\WWTravelClubDB.pdb
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.csprojAssemblyReference.cache
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.AssemblyInfo.cs
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.dll
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\ref\WWTravelClubDB.dll
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.pdb
+C:\Users\HP\Documents\New Book\Code\WWTravelClubDB\WWTravelClubDB\obj\Debug\net5.0\WWTravelClubDB.genruntimeconfig.cache
