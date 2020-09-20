@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30404.54
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scalability-sample-2E", "scalability-sample-2E\scalability-sample-2E.csproj", "{EC3D0F71-E0FC-466E-B764-C96CACBD1530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC3D0F71-E0FC-466E-B764-C96CACBD1530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3D0F71-E0FC-466E-B764-C96CACBD1530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3D0F71-E0FC-466E-B764-C96CACBD1530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3D0F71-E0FC-466E-B764-C96CACBD1530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F36F3281-AD0A-4496-B37F-21AA43B08C91}
+	EndGlobalSection
+EndGlobal
