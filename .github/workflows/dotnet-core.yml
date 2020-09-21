@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 5.0.100-preview.3.20216.6
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore ./ch21/ch21.sln
     - name: Build
       run: dotnet build ./ch21/ch21.sln --configuration Release --no-restore
     - name: Test
