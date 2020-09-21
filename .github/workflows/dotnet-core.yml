@@ -20,6 +20,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build .\ch21 --configuration Release --no-restore
+      run: dotnet build ./ch21/ch21.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test .\ch21 --no-restore --verbosity normal
+      run: dotnet test ./ch21/ch21.sln --no-restore --verbosity normal
