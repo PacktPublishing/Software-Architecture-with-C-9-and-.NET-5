@@ -5,3 +5,12 @@
 /ch21/ch21/bin/Debug/net5.0
 /ch21/ch21/obj
 /ch21/.vs/ch21/v16
+/ch21/ch21/bin/Release/net5.0
+/ch21/.vs/ch21/DesignTimeBuild
+/ch13/.vs/ch13/v16
+/ch13/CodeReuse/obj
+/ch13/CodeReuse/bin/Debug
+/ch13/CodeReuseLibrary/obj
+/ch13/CodeReuseLibrary/bin/Debug
+/ch13/dotNetStandardLibrary/obj
+/ch13/dotNetStandardLibrary/bin/Debug/netstandard2.1
