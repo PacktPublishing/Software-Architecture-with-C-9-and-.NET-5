@@ -1,0 +1,12 @@
+{
+  "runtimeOptions": {
+    "tfm": "net5.0",
+    "framework": {
+      "name": "Microsoft.AspNetCore.App",
+      "version": "5.0.0-preview.8.20360.11"
+    },
+    "configProperties": {
+      "System.GC.Server": true
+    }
+  }
+}
