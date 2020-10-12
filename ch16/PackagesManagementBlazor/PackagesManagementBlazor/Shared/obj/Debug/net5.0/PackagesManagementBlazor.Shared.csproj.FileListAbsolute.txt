@@ -1,0 +1,12 @@
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\bin\Debug\net5.0\PackagesManagementBlazor.Shared.deps.json
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\bin\Debug\net5.0\PackagesManagementBlazor.Shared.dll
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\bin\Debug\net5.0\ref\PackagesManagementBlazor.Shared.dll
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\bin\Debug\net5.0\PackagesManagementBlazor.Shared.pdb
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.csprojAssemblyReference.cache
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.AssemblyInfo.cs
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.dll
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\ref\PackagesManagementBlazor.Shared.dll
+C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementBlazor\Shared\obj\Debug\net5.0\PackagesManagementBlazor.Shared.pdb

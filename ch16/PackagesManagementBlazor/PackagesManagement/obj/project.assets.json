@@ -1,0 +1,646 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v5.0": {
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.0-rc.1.20451.17": {
+        "type": "package"
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Design/5.0.0-rc.1.20451.13": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.0-rc.1.20451.13": {
+        "type": "package"
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0-rc.1.20451.14",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-rc.1.20451.14",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "PackagesManagementDB/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0-rc.1.20451.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-rc.1.20451.13",
+          "PackagesManagementDomain": "1.0.0"
+        }
+      },
+      "PackagesManagementDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0-rc.1.20451.14",
+          "System.ComponentModel.Annotations": "5.0.0-rc.1.20451.14"
+        }
+      }
+    },
+    ".NETFramework,Version=v5.0/win7-x86": {
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.0-rc.1.20451.17": {
+        "type": "package"
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Design/5.0.0-rc.1.20451.13": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.0-rc.1.20451.13": {
+        "type": "package"
+      },
+      "Microsoft.Extensions.DependencyInjection/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0-rc.1.20451.14",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0-rc.1.20451.14",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0-rc.1.20451.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "PackagesManagementDB/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0-rc.1.20451.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-rc.1.20451.13",
+          "PackagesManagementDomain": "1.0.0"
+        }
+      },
+      "PackagesManagementDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.0-rc.1.20451.14",
+          "System.ComponentModel.Annotations": "5.0.0-rc.1.20451.14"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.0-rc.1.20451.17": {
+      "sha512": "2OwAYSNPyiW9WPk4GkaIbb9OQmPwRu/y+SnAfrFDPH7HbYLDLQXwlkB7t2mcZ89MlpAOA0WZT2/iQo45Op6TDw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/5.0.0-rc.1.20451.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml",
+        "lib/netstandard2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+        "lib/netstandard2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.identity.entityframeworkcore.5.0.0-rc.1.20451.17.nupkg.sha512",
+        "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0-rc.1.20451.14": {
+      "sha512": "NEWaKzTvKJPheVdq2bw4TtQl4424nJZVbXIy9inOkDXwcUeo4jZTZ6Wkqp6D2zd7DnINYonBvfgG62m5NC1AgQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0-rc.1.20451.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0-rc.1.20451.14.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Design/5.0.0-rc.1.20451.13": {
+      "sha512": "pDlnpBzv0jJlW8gq99oBx/w9bYDbnRCQT/tQ65lvX5o9FFzueRG9M+In3FOBR/AM56HSPfkpmlhCd66r6R/Hqw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/5.0.0-rc.1.20451.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.5.0.0-rc.1.20451.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer/5.0.0-rc.1.20451.13": {
+      "sha512": "Lt6ubPz7cbJ1s8Wf1bgKOr9hSjWPLkm/pRLleLS0Bl2QTtACUMaDHXonZ9FFNTz7iytJTizYpcD8XZxDJEViaQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver/5.0.0-rc.1.20451.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.xml",
+        "microsoft.entityframeworkcore.sqlserver.5.0.0-rc.1.20451.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/5.0.0-rc.1.20451.14": {
+      "sha512": "oJ5/51XN4NQXIFtx2q+zB2Ykw4rsj+s/v5ExXqlVz9exGoe2iE+TF3uEyGucKg5lQFmJqIcVFdpzC3TNk2DmnA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.0-rc.1.20451.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.0-rc.1.20451.14.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0-rc.1.20451.14": {
+      "sha512": "tXszQtgqpXCiT/AkpMcNbV6DqmJon+Bpwp6VU27lo4GIi9tB+c3b/EdcQqzGA2qfClX8sV59HP3QPpBVMHhY3w==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0-rc.1.20451.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0-rc.1.20451.14.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ComponentModel.Annotations/5.0.0-rc.1.20451.14": {
+      "sha512": "DKy6FVHr2xf81iM473Xd4+gfhxWHjKGrqx+O02xgvVGfzt5cSU9sIX5yoo02EqVZhkWFm0CP6Zu4rD+8f2A69g==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/5.0.0-rc.1.20451.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "lib/portable-net45+win8/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/net461/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "ref/portable-net45+win8/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.5.0.0-rc.1.20451.14.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "PackagesManagementDB/1.0.0": {
+      "type": "project",
+      "path": "../PackagesManagementDB/PackagesManagementDB.csproj",
+      "msbuildProject": "../PackagesManagementDB/PackagesManagementDB.csproj"
+    },
+    "PackagesManagementDomain/1.0.0": {
+      "type": "project",
+      "path": "../PackagesManagementDomain/PackagesManagementDomain.csproj",
+      "msbuildProject": "../PackagesManagementDomain/PackagesManagementDomain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v5.0": [
+      "Microsoft.EntityFrameworkCore.Design >= 5.0.0-rc.1.20451.13",
+      "PackagesManagementDB >= 1.0.0",
+      "PackagesManagementDomain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagement\\PackagesManagement.csproj",
+      "projectName": "PackagesManagement",
+      "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagement\\PackagesManagement.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagement\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\LocalNugetFeed": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "I:\\Nuget": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/mvcct/_packaging/MainFeed/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net50": {
+          "projectReferences": {
+            "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagementDB\\PackagesManagementDB.csproj": {
+              "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagementDB\\PackagesManagementDB.csproj"
+            },
+            "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
+              "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagementDomain\\PackagesManagementDomain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net50": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.0-rc.1.20451.13, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 5.0.0-rc.1.20451.13 is not compatible with net50 (.NETFramework,Version=v5.0). Package Microsoft.EntityFrameworkCore.Design 5.0.0-rc.1.20451.13 supports: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 5.0.0-rc.1.20451.13 is not compatible with net50 (.NETFramework,Version=v5.0). Package Microsoft.EntityFrameworkCore.SqlServer 5.0.0-rc.1.20451.13 supports: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.0-rc.1.20451.17 is not compatible with net50 (.NETFramework,Version=v5.0). Package Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.0-rc.1.20451.17 supports:\r\n  - net5.0 (.NETCoreApp,Version=v5.0)\r\n  - netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 5.0.0-rc.1.20451.13 is not compatible with net50 (.NETFramework,Version=v5.0) / win7-x86. Package Microsoft.EntityFrameworkCore.Design 5.0.0-rc.1.20451.13 supports: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0/win7-x86"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 5.0.0-rc.1.20451.13 is not compatible with net50 (.NETFramework,Version=v5.0) / win7-x86. Package Microsoft.EntityFrameworkCore.SqlServer 5.0.0-rc.1.20451.13 supports: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0/win7-x86"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.0-rc.1.20451.17 is not compatible with net50 (.NETFramework,Version=v5.0) / win7-x86. Package Microsoft.AspNetCore.Identity.EntityFrameworkCore 5.0.0-rc.1.20451.17 supports:\r\n  - net5.0 (.NETCoreApp,Version=v5.0)\r\n  - netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        ".NETFramework,Version=v5.0/win7-x86"
+      ]
+    }
+  ]
+}
