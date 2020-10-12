@@ -23,3 +23,14 @@
 /ch11/DesignPatternsSample/bin/Debug
 /ch11/GenericHost/bin/Debug/netcoreapp3.0
 /ch13/.vs/ch13/DesignTimeBuild
+/ch14/.vs/ch14
+/ch14/WWTravelClubDB/obj
+/ch14/WWTravelClubDB/bin/Debug
+/ch14/WWTravelClubDBTest/obj
+/ch14/WWTravelClubDBTest/bin/Debug
+/ch14/WWTravelClubREST/obj
+/ch14/WWTravelClubREST/bin/Debug
+/ch17/CodeMetrics/obj
+/ch17/CodeMetrics/bin/Debug
+/ch17/CodeMetricsGoodCode/obj
+/ch17/CodeMetricsGoodCode/bin/Debug
