@@ -9,7 +9,7 @@ using PackagesManagementDB;
 
 namespace PackagesManagementDB.Migrations
 {
-    [DbContext(typeof(MainDBContext))]
+    [DbContext(typeof(MainDbContext))]
     [Migration("20190803103812_Initial")]
     partial class Initial
     {
@@ -217,7 +217,7 @@ namespace PackagesManagementDB.Migrations
 
                     b.Property<int>("DestinationId");
 
-                    b.Property<int>("DuratioInDays");
+                    b.Property<int>("DurationInDays");
 
                     b.Property<DateTime?>("EndValidityDate");
 

@@ -46,7 +46,7 @@ namespace FakeSource
 
                 PurchaseInfo message = new PurchaseInfo
                 {
-                    Time = DateTimeOffset.Now,
+                    Time = DateTimeOffset.UtcNow,
                     Location = locations[random.Next(0, locations.Length)],
                     Cost = 200m * random.Next(1, 4)
                 };

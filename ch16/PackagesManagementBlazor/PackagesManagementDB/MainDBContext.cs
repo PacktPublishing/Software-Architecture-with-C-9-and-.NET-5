@@ -9,12 +9,12 @@ using PackagesManagementDB.Models;
 
 namespace PackagesManagementDB
 {
-    public class MainDBContext: IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>, IUnitOfWork
+    public class MainDbContext: IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>, IUnitOfWork
     {
         public DbSet<Package> Packages { get; set; }
         public DbSet<Destination> Destinations { get; set; }
         public DbSet<PackageEvent> PackageEvents { get; set; }
-        public MainDBContext(DbContextOptions options)
+        public MainDbContext(DbContextOptions options)
             : base(options)
         {
         }
@@ -43,7 +43,7 @@ namespace PackagesManagementDB
                 .HasIndex(m => m.Name);
 
             builder.Entity<Package>()
-                .HasIndex("StartValidityDate", "EndValidityDate");
+                .HasIndex(nameof(Package.StartValidityDate), nameof(Package.EndValidityDate));
         }
 
         public async Task<bool> SaveEntitiesAsync()

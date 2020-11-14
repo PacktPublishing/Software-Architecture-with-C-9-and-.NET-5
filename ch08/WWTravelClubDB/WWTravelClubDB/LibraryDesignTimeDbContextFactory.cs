@@ -4,17 +4,17 @@ using Microsoft.EntityFrameworkCore.Design;
 namespace WWTravelClubDB
 {
     public class LibraryDesignTimeDbContextFactory
-        : IDesignTimeDbContextFactory<MainDBContext>
+        : IDesignTimeDbContextFactory<MainDbContext>
     {
         private const string  connectionString =
             @"Server=(localdb)\mssqllocaldb;Database=wwtravelclub;
                 Trusted_Connection=True;MultipleActiveResultSets=true";
-        public MainDBContext CreateDbContext(params string[] args)
+        public MainDbContext CreateDbContext(params string[] args)
         {
-            var builder = new DbContextOptionsBuilder<MainDBContext>();
+            var builder = new DbContextOptionsBuilder<MainDbContext>();
             
             builder.UseSqlServer(connectionString);
-            return new MainDBContext(builder.Options);
+            return new MainDbContext(builder.Options);
         }
     }
 }

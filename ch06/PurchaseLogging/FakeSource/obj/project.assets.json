@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v5.0": {
+    "net5.0": {
       "Microsoft.ServiceFabric/7.1.458": {
         "type": "package",
         "compile": {
@@ -291,7 +291,7 @@
         }
       }
     },
-    ".NETCoreApp,Version=v5.0/win7-x64": {
+    "net5.0/win7-x64": {
       "Microsoft.ServiceFabric/7.1.458": {
         "type": "package",
         "compile": {
@@ -883,7 +883,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v5.0": [
+    "net5.0": [
       "Interactions >= 1.0.0",
       "Microsoft.ServiceFabric.Services >= 4.1.458"
     ]
@@ -896,11 +896,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\FakeSource\\FakeSource.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\FakeSource\\FakeSource.csproj",
       "projectName": "FakeSource",
-      "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\FakeSource\\FakeSource.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\FakeSource\\FakeSource.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\FakeSource\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\FakeSource\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -923,9 +923,10 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj": {
-              "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj"
+            "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj": {
+              "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj"
             }
           }
         }
@@ -938,6 +939,7 @@
     },
     "frameworks": {
       "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.ServiceFabric.Services": {
             "target": "Package",
@@ -957,15 +959,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[5.0.0-preview.7.20365.19, 5.0.0-preview.7.20365.19]"
+            "version": "[5.0.0, 5.0.0]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[5.0.0-preview.7.20364.11, 5.0.0-preview.7.20364.11]"
+            "version": "[5.0.0, 5.0.0]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[5.0.0-preview.7.20366.1, 5.0.0-preview.7.20366.1]"
+            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -973,7 +975,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

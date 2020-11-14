@@ -718,11 +718,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
       "projectName": "IdempotencyTools",
-      "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -745,6 +745,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -756,6 +757,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.ServiceFabric.Services": {
             "target": "Package",
@@ -778,7 +780,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

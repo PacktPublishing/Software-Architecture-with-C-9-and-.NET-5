@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\LogStore\\LogStore.csproj": {}
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\LogStore\\LogStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
         "projectName": "IdempotencyTools",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -34,6 +34,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -45,6 +46,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.ServiceFabric.Services": {
               "target": "Package",
@@ -67,18 +69,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj",
         "projectName": "Interactions",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -101,9 +103,10 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj"
+              "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj"
               }
             }
           }
@@ -116,6 +119,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.ServiceFabric.Services.Remoting": {
               "target": "Package",
@@ -138,18 +142,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\LogStore\\LogStore.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\LogStore\\LogStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\LogStore\\LogStore.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\LogStore\\LogStore.csproj",
         "projectName": "LogStore",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\LogStore\\LogStore.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\LogStore\\LogStore.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\LogStore\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\LogStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -172,9 +176,10 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj"
+              "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj"
               }
             }
           }
@@ -187,10 +192,11 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.ServiceFabric.Services": {
               "target": "Package",
@@ -210,15 +216,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[5.0.0-preview.7.20365.19, 5.0.0-preview.7.20365.19]"
+              "version": "[5.0.0, 5.0.0]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[5.0.0-preview.7.20364.11, 5.0.0-preview.7.20364.11]"
+              "version": "[5.0.0, 5.0.0]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[5.0.0-preview.7.20366.1, 5.0.0-preview.7.20366.1]"
+              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -226,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.7.20366.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

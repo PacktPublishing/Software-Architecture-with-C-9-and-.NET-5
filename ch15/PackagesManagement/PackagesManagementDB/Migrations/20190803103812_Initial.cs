@@ -196,7 +196,7 @@ namespace PackagesManagementDB.Migrations
                     Name = table.Column<string>(maxLength: 128, nullable: false),
                     Description = table.Column<string>(maxLength: 128, nullable: true),
                     Price = table.Column<decimal>(nullable: false),
-                    DuratioInDays = table.Column<int>(nullable: false),
+                    DurationInDays = table.Column<int>(nullable: false),
                     StartValidityDate = table.Column<DateTime>(nullable: true),
                     EndValidityDate = table.Column<DateTime>(nullable: true),
                     EntityVersion = table.Column<long>(nullable: false),

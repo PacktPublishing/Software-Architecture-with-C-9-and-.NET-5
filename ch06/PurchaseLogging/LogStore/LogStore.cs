@@ -36,7 +36,7 @@ namespace LogStore
         {
             return this.CreateServiceRemotingReplicaListeners<LogStore>();
         }
-        private IReliableQueue<IdempotentMessage<PurchaseInfo>> LogQueue = null;
+        private IReliableQueue<IdempotentMessage<PurchaseInfo>> LogQueue;
         public async Task<bool> LogPurchase(IdempotentMessage<PurchaseInfo> idempotentMessage)
         {
             if (LogQueue == null) return false;

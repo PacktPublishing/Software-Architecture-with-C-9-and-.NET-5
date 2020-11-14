@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj": {}
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch08\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch08\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch08\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj",
         "projectName": "WWTravelClubDB",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch08\\WWTravelClubDB\\WWTravelClubDB\\WWTravelClubDB.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\WWTravelClubDB\\WWTravelClubDB\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch08\\WWTravelClubDB\\WWTravelClubDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -52,17 +52,17 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

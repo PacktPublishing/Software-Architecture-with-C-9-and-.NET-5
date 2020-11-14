@@ -16,10 +16,10 @@ namespace PackagesManagementDB.Extensions
         public static IServiceCollection AddDbLayer(this IServiceCollection services, 
             string connectionString, string migrationAssembly)
         {
-            services.AddDbContext<MainDBContext>(options =>
+            services.AddDbContext<MainDbContext>(options =>
                 options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationAssembly)));
             services.AddIdentity<IdentityUser<int>, IdentityRole<int>>()
-                .AddEntityFrameworkStores<MainDBContext>()
+                .AddEntityFrameworkStores<MainDbContext>()
                 .AddDefaultTokenProviders();
             services.AddAllRepositories(typeof(DBExtensions).Assembly);
             return services;
@@ -28,13 +28,13 @@ namespace PackagesManagementDB.Extensions
         {
             using (var serviceScope = serviceProvider.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetService<MainDBContext>();
+                var context = serviceScope.ServiceProvider.GetService<MainDbContext>();
                 context.Database.Migrate();
                 await Seed(context, serviceScope);
 
             }
         }
-        private static async Task Seed(MainDBContext context, IServiceScope serviceScope)
+        private static async Task Seed(MainDbContext context, IServiceScope serviceScope)
         {
             
            if (!await context.Roles.AnyAsync())
@@ -69,7 +69,7 @@ namespace PackagesManagementDB.Extensions
                                 Name = "Summer in Florence",
                                 StartValidityDate = new DateTime(2019, 6, 1),
                                 EndValidityDate = new DateTime(2019, 10, 1),
-                                DuratioInDays=7,
+                                DurationInDays=7,
                                 Price=1000,
                                 EntityVersion=1
                             },
@@ -78,7 +78,7 @@ namespace PackagesManagementDB.Extensions
                                 Name = "Winter in Florence",
                                 StartValidityDate = new DateTime(2019, 12, 1),
                                 EndValidityDate = new DateTime(2020, 2, 1),
-                                DuratioInDays=7,
+                                DurationInDays=7,
                                 Price=500,
                                 EntityVersion=1
                             }

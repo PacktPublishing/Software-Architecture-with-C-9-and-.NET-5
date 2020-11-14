@@ -10,8 +10,8 @@ namespace PackagesManagement.Queries
 {
     public class PackagesListQuery:IPackagesListQuery
     {
-        MainDBContext ctx;
-        public PackagesListQuery(MainDBContext ctx)
+        MainDbContext ctx;
+        public PackagesListQuery(MainDbContext ctx)
         {
             this.ctx = ctx;
         }
@@ -22,7 +22,7 @@ namespace PackagesManagement.Queries
                 StartValidityDate = m.StartValidityDate,
                 EndValidityDate = m.EndValidityDate,
                 Name = m.Name,
-                DuratioInDays = m.DuratioInDays,
+                DurationInDays = m.DurationInDays,
                 Id = m.Id,
                 Price = m.Price,
                 DestinationName = m.MyDestination.Name,

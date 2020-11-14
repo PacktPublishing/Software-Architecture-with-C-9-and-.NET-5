@@ -14,8 +14,8 @@ namespace PackagesManagementDB.Repositories
     public class DestinationRepository : IDestinationRepository
 
     {
-        private MainDBContext context;
-        public DestinationRepository(MainDBContext context)
+        private MainDbContext context;
+        public DestinationRepository(MainDbContext context)
         {
             this.context = context;
         }

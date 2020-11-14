@@ -25,7 +25,7 @@ namespace PackagesManagementDB.Models
             Name = o.Name;
             Description = o.Description;
             Price = o.Price;
-            DuratioInDays = o.DuratioInDays;
+            DurationInDays = o.DurationInDays;
             StartValidityDate = o.StartValidityDate;
             EndValidityDate = o.EndValidityDate;
         }
@@ -34,7 +34,7 @@ namespace PackagesManagementDB.Models
         [MaxLength(128)]
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public int DuratioInDays { get; set; }
+        public int DurationInDays { get; set; }
         public DateTime? StartValidityDate { get; set; }
         public DateTime? EndValidityDate { get; set; }
         public Destination MyDestination { get; set; }

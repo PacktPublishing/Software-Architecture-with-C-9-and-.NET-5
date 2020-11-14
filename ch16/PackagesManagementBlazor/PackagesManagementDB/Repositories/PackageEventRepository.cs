@@ -13,8 +13,8 @@ namespace PackagesManagementDB.Repositories
 {
     public class PackageEventRepository : IPackageEventRepository
     {
-        private MainDBContext context;
-        public PackageEventRepository(MainDBContext context)
+        private MainDbContext context;
+        public PackageEventRepository(MainDbContext context)
         {
             this.context = context;
         }

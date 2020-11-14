@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6uD8xKq28N0LQQ8vvlCmQH9vimuzq39p3+ISa2LZGh0ofOVvVeGezIcVwFdxrlq+0h5cRT7O4apDeqrKBR9ubw==",
+  "dgSpecHash": "S0Go5FtSeifgcyTx1Q8JLL/vsn1yUMr9c2HUYj+ROrFQ603vJhCnUUnMne0R0Fi2i1esbnjE+1AviEd0PvGhVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\IdempotencyTools\\IdempotencyTools.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric\\7.1.458\\microsoft.servicefabric.7.1.458.nupkg.sha512",

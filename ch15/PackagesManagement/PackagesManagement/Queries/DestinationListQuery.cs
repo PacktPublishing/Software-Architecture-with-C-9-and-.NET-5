@@ -10,8 +10,8 @@ namespace PackagesManagement.Queries
 {
     public class DestinationListQuery : IDestinationListQuery
     {
-        MainDBContext ctx;
-        public DestinationListQuery(MainDBContext ctx)
+        MainDbContext ctx;
+        public DestinationListQuery(MainDbContext ctx)
         {
             this.ctx = ctx;
         }

@@ -32,7 +32,7 @@ namespace LogStore
             var delayString=configurationPackage.Settings.Sections["Timing"]
                 .Parameters["MessageMaxDelaySeconds"].Value;
             var delay = int.Parse(delayString);
-            var filter = await IdempotencyFilter.NewIdempotencyFilter(
+            var filter = await IdempotencyFilter.NewIdempotencyFilterAsync(
                 "logMessages", delay, stateManager);
             var store = await
                 stateManager.GetOrAddAsync<IReliableDictionary<string, RunningTotal>>("partialCount");
@@ -40,7 +40,7 @@ namespace LogStore
             {
                 while (!queueEmpty && !stoppingToken.IsCancellationRequested)
                 {
-                    RunningTotal total = null;
+                    RunningTotal finalDayTotal = null;
                     using (ITransaction tx = stateManager.CreateTransaction())
                     {
                         var result = await queue.TryDequeueAsync(tx);
@@ -59,7 +59,7 @@ namespace LogStore
                                         Day= counter.Value.Day
                                     }
                                     : new RunningTotal();
-                                total = newCounter.Update(item.Time, item.Cost);
+                                finalDayTotal = newCounter.Update(item.Time, item.Cost);
                                 if (counter.HasValue)
                                     await store.TryUpdateAsync(tx, item.Location, 
                                         newCounter, counter.Value);
@@ -67,9 +67,9 @@ namespace LogStore
                                     await store.TryAddAsync(tx, item.Location, newCounter);
                             }
                             await tx.CommitAsync();
-                            if(total != null)
+                            if(finalDayTotal != null)
                             {
-                                await SendTotal(total, item.Location);
+                                await SendTotal(finalDayTotal, item.Location);
                             }
                         }
 

@@ -9,7 +9,7 @@ using WWTravelClubDB;
 
 namespace WWTravelClubDB.Migrations
 {
-    [DbContext(typeof(MainDBContext))]
+    [DbContext(typeof(MainDbContext))]
     [Migration("20190205102637_initial")]
     partial class initial
     {
@@ -57,7 +57,7 @@ namespace WWTravelClubDB.Migrations
 
                     b.Property<int>("DestinationId");
 
-                    b.Property<int>("DuratioInDays");
+                    b.Property<int>("DurationInDays");
 
                     b.Property<DateTime?>("EndValidityDate");
 

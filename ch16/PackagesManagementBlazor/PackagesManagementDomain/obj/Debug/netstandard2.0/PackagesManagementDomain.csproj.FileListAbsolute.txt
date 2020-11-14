@@ -33,3 +33,12 @@ C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementD
 C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.csproj.CoreCompileInputs.cache
 C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.dll
 C:\Users\HP\Documents\New Book\Code\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.pdb
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\bin\Debug\netstandard2.0\PackagesManagementDomain.deps.json
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\bin\Debug\netstandard2.0\PackagesManagementDomain.dll
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\bin\Debug\netstandard2.0\PackagesManagementDomain.pdb
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.csprojAssemblyReference.cache
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.AssemblyInfo.cs
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.dll
+C:\Users\HP\Documents\New Book\BookCode\Hands-On-Software-Architecture-with-C-9-and-.NET-5\ch16\PackagesManagementBlazor\PackagesManagementDomain\obj\Debug\netstandard2.0\PackagesManagementDomain.pdb

@@ -3,10 +3,11 @@
     "tfm": "net5.0",
     "framework": {
       "name": "Microsoft.AspNetCore.App",
-      "version": "5.0.0-preview.8.20360.11"
+      "version": "5.0.0-rc.2.20475.17"
     },
     "configProperties": {
-      "System.GC.Server": true
+      "System.GC.Server": true,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
   }
 }

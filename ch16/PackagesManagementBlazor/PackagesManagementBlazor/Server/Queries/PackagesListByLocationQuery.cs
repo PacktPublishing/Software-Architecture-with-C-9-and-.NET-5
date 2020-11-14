@@ -9,8 +9,8 @@ namespace PackagesManagementBlazor.Server.Queries
 {
     public class PackagesListByLocationQuery:IPackagesListByLocationQuery
     {
-        MainDBContext ctx;
-        public PackagesListByLocationQuery(MainDBContext ctx)
+        MainDbContext ctx;
+        public PackagesListByLocationQuery(MainDbContext ctx)
         {
             this.ctx = ctx;
         }
@@ -23,7 +23,7 @@ namespace PackagesManagementBlazor.Server.Queries
                 StartValidityDate = m.StartValidityDate,
                 EndValidityDate = m.EndValidityDate,
                 Name = m.Name,
-                DuratioInDays = m.DuratioInDays,
+                DurationInDays = m.DurationInDays,
                 Id = m.Id,
                 Price = m.Price,
                 DestinationName = m.MyDestination.Name,

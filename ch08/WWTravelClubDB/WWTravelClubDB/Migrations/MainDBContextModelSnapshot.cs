@@ -8,7 +8,7 @@ using WWTravelClubDB;
 
 namespace WWTravelClubDB.Migrations
 {
-    [DbContext(typeof(MainDBContext))]
+    [DbContext(typeof(MainDbContext))]
     partial class MainDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -55,7 +55,7 @@ namespace WWTravelClubDB.Migrations
 
                     b.Property<int>("DestinationId");
 
-                    b.Property<int>("DuratioInDays");
+                    b.Property<int>("DurationInDays");
 
                     b.Property<DateTime?>("EndValidityDate");
 

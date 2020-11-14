@@ -13,7 +13,7 @@ namespace PackagesManagementDomain.Aggregates
 
         string Description { get;}
         decimal Price { get; set; }
-        int DuratioInDays { get; }
+        int DurationInDays { get; }
         DateTime? StartValidityDate { get;}
         DateTime? EndValidityDate { get;  }
         int DestinationId { get; }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MpcJFyiCtYavxZnnJIghw/W0TSqw5qyrpfOsHEWr5WbRwhe/EseMvr6yv1gnSKolbjqP0o52EIrfG0mKm/OesQ==",
+  "dgSpecHash": "vtKXOtGw28qtzUTfFYFbpylsIPE4+8P1KN2PvKLVVfyXFttkJrjPexBhRHivYVQcUq3oKMOkDI99z9WljSgdwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PurchaseLogging\\Interactions\\Interactions.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch06\\PurchaseLogging\\Interactions\\Interactions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.servicefabric\\7.1.458\\microsoft.servicefabric.7.1.458.nupkg.sha512",

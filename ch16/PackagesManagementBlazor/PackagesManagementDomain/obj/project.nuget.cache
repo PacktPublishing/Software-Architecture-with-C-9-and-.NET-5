@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/llW7Kig+7Z6brpL7KuNqt76F5aG9NLwggwSzMoQrKz3e09Rx3wx1X+OH78k1Bzt3No0fPoyPC7AR/Jtb+GO7A==",
+  "dgSpecHash": "/N1hMVw+xUQYIsyYjv5XE6HTGmQLX+kd1V7gVXyL13AUgIEH1pLjw+hE+DOZ+PeaOSc1SX29QSDcWBSm9V5BbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagementBlazor\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch16\\PackagesManagementBlazor\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0-rc.1.20451.14\\microsoft.bcl.asyncinterfaces.5.0.0-rc.1.20451.14.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0-rc.1.20451.14\\microsoft.extensions.dependencyinjection.5.0.0-rc.1.20451.14.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0-rc.1.20451.14\\microsoft.extensions.dependencyinjection.abstractions.5.0.0-rc.1.20451.14.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-rc.1.20451.14\\system.componentmodel.annotations.5.0.0-rc.1.20451.14.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],

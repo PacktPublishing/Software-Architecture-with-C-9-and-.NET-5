@@ -14,8 +14,8 @@ namespace PackagesManagementDB.Repositories
 {
     public class PackageRepository : IPackageRepository
     {
-        private MainDBContext context;
-        public PackageRepository(MainDBContext context)
+        private MainDbContext context;
+        public PackageRepository(MainDbContext context)
         {
             this.context = context;
         }

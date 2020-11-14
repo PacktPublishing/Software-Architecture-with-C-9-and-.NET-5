@@ -12,7 +12,7 @@ namespace LogStore
         public RunningTotal Update(DateTimeOffset time, decimal value)
         {
             var normalizedTime = time.ToUniversalTime();
-            var newDay = new DateTime(normalizedTime.Year, normalizedTime.Month, normalizedTime.Day);
+            var newDay = normalizedTime.Date;
             
             var result = newDay > Day && Day != DateTime.MinValue ? 
                 new RunningTotal

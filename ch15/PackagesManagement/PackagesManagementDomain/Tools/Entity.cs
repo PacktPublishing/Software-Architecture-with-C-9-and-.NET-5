@@ -16,26 +16,26 @@ namespace DDD.DomainLayer
         }
         public override bool Equals(object obj)
         {
-
-            if (obj == null || !(obj is Entity<K>))
-                return false;
-            if (Object.ReferenceEquals(this, obj))
-                return true;
-            if (this.GetType() != obj.GetType())
-                return false;
-            Entity<K> item = (Entity<K>)obj;
-            if (item.IsTransient() || this.IsTransient())
-                return false;
-            else
-                return Object.Equals(item.Id, Id);
+            return obj is Entity<K> entity &&
+              Equals(entity); 
         }
+
+        public bool Equals(IEntity<K> other)
+        {
+            if (other == null || 
+                other.IsTransient() || this.IsTransient())
+                return false;
+
+            return Object.Equals(Id, other.Id);
+        }
+
         int? _requestedHashCode;
         public override int GetHashCode()
         {
             if (!IsTransient())
             {
                 if (!_requestedHashCode.HasValue)
-                    _requestedHashCode = this.Id.GetHashCode() ^ 31;
+                    _requestedHashCode = HashCode.Combine(Id);
                 return _requestedHashCode.Value;
             }
             else
@@ -56,7 +56,7 @@ namespace DDD.DomainLayer
         public List<IEventNotification> DomainEvents { get; private set; }
         public void AddDomainEvent(IEventNotification evt)
         {
-            DomainEvents = DomainEvents ?? new List<IEventNotification>();
+            DomainEvents ??= new List<IEventNotification>();
             DomainEvents.Add(evt);
         }
         public void RemoveDomainEvent(IEventNotification evt)

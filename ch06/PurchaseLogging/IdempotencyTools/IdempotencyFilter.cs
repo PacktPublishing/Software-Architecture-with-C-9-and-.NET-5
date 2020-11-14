@@ -11,22 +11,24 @@ namespace IdempotencyTools
 {
     public class IdempotencyFilter
     {
-        protected IReliableDictionary<Guid, DateTimeOffset> dictionary;
-        protected int maxDelaySeconds;
-        protected DateTimeOffset lastClear;
-        protected IReliableStateManager sm;
-        protected IdempotencyFilter() { }
-        public static async Task<IdempotencyFilter> NewIdempotencyFilter(
-            string name, 
-            int maxDelaySeconds, 
+        private IReliableDictionary<Guid, DateTimeOffset> dictionary;
+        private int maxDelaySeconds;
+        private DateTimeOffset lastClear;
+        private IReliableStateManager sm;
+        private IdempotencyFilter() { }
+        public static async Task<IdempotencyFilter> NewIdempotencyFilterAsync(
+            string name,
+            int maxDelaySeconds,
             IReliableStateManager sm)
         {
-            var result = new IdempotencyFilter();
-            result.dictionary = await sm.GetOrAddAsync<IReliableDictionary<Guid, DateTimeOffset>> (name);
-            result.maxDelaySeconds = maxDelaySeconds;
-            result.lastClear = DateTimeOffset.Now;
-            result.sm = sm;
-            return result;
+            return new IdempotencyFilter()
+            {
+                dictionary = await sm.GetOrAddAsync<IReliableDictionary<Guid, DateTimeOffset>>(name),
+                maxDelaySeconds = maxDelaySeconds,
+                lastClear = DateTimeOffset.UtcNow,
+                sm = sm,
+            };
+            
         }
         public async Task<T> NewMessage<T>(IdempotentMessage<T> message)
         {
@@ -38,22 +40,20 @@ namespace IdempotencyTools
             }
             if ((now - message.Time).TotalSeconds > maxDelaySeconds)
                 return default(T);
-            using (ITransaction tx = this.sm.CreateTransaction())
+            using (var tx = this.sm.CreateTransaction())
             {
-                var result = await dictionary.TryGetValueAsync(tx, message.Id);
-                if (result.HasValue)
+                if (await dictionary.TryAddAsync(tx, message.Id, message.Time))
                 {
-                    tx.Abort();
-                    return default(T);
-                }
-                else
-                {
-                    await dictionary.TryAddAsync(tx, message.Id, message.Time);
                     await tx.CommitAsync();
                     return message.Value;
                 }
+                else
+                {
+                    return default;
+                }
+
             }
-         }
+        }
         public async Task Clear()
         {
             DateTimeOffset now = DateTimeOffset.Now;

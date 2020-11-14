@@ -11,7 +11,7 @@ namespace PackagesManagement.Models.Packages
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
-        public int DuratioInDays { get; set; }
+        public int DurationInDays { get; set; }
         public DateTime? StartValidityDate { get; set; }
         public DateTime? EndValidityDate { get; set; }
         public string DestinationName { get; set; }
@@ -19,7 +19,7 @@ namespace PackagesManagement.Models.Packages
         public override string ToString()
         {
             return string.Format("{0}. {1} days in {2}, price: {3}",
-                Name, DuratioInDays, DestinationName, Price);
+                Name, DurationInDays, DestinationName, Price);
         }
     }
 }

@@ -4,11 +4,11 @@ using WWTravelClubDB.Models;
 
 namespace WWTravelClubDB
 {
-    public class MainDBContext: DbContext
+    public class MainDbContext: DbContext
     {
         public DbSet<Package> Packages { get; set; }
         public DbSet<Destination> Destinations { get; set; }
-        public MainDBContext(DbContextOptions options)
+        public MainDbContext(DbContextOptions options)
             : base(options)
         {
         }
@@ -36,7 +36,7 @@ namespace WWTravelClubDB
                 .HasIndex(m => m.Name);
 
             builder.Entity<Package>()
-                .HasIndex("StartValidityDate", "EndValidityDate");
+                .HasIndex(nameof(Package.StartValidityDate), nameof(Package.EndValidityDate));
         }   
     }
 }

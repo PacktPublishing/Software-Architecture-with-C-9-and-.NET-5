@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj": {}
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj",
         "projectName": "PackagesManagementDB",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -36,8 +36,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj"
+              "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj"
               }
             }
           }
@@ -54,23 +54,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.17, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -91,18 +91,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
         "projectName": "PackagesManagementDomain",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -114,7 +114,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\LocalNugetFeed": {},
@@ -124,8 +124,8 @@
           "https://pkgs.dev.azure.com/mvcct/_packaging/MainFeed/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -136,22 +136,16 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.14, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[5.0.0, )"
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.14, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -164,18 +158,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj": {
+    "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj",
         "projectName": "PackagesManagement",
-        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagement\\PackagesManagement.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagement\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -200,11 +199,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj"
+              "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDB\\PackagesManagementDB.csproj"
               },
-              "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
-                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\Code\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj"
+              "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\New Book\\BookCode\\Hands-On-Software-Architecture-with-C-9-and-.NET-5\\ch15\\PackagesManagement\\PackagesManagementDomain\\PackagesManagementDomain.csproj"
               }
             }
           }
@@ -223,7 +222,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -244,7 +243,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
