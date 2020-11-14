@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -48,14 +49,9 @@ namespace dotNetStandardLibrary
         /// <returns>The average of the grade from Evaluations</returns>
         public double CalculateEvaluationAverage()
         {
-            var count = 0;
-            double evaluationGrade = 0;
-            foreach (var evaluation in content.Evaluations)
-            {
-                evaluationGrade += evaluation.CalculateGrade();
-                count++;
-            }
-            return evaluationGrade/count;
-        }    
+            return content.Evaluations
+                .Select(x => x.CalculateGrade())
+                .Average();
+        }
     }
 }

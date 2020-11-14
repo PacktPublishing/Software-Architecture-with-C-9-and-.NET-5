@@ -24,9 +24,9 @@ namespace FunctionAppWWTravel
         {
             var requestData = await req.Content.ReadAsStringAsync();
 
-            var YOUR_CONNECTION_STRING = "[YOUR_AZURE_STORAGE_ACCOUNT_CONNECTION_STRING_HERE]";
+            var connectionString = Environment.GetEnvironmentVariable("AzureQueueStorage");
 
-            var storageAccount = CloudStorageAccount.Parse(YOUR_CONNECTION_STRING);
+            var storageAccount = CloudStorageAccount.Parse(connectionString);
 
             var queueClient = storageAccount.CreateCloudQueueClient();
 

@@ -10,35 +10,32 @@ namespace Cognitive
     {
         private static async Task<string> PostAPI(string api, string key, string region, string textToTranslate)
         {
-            string result = String.Empty;
+            using var client = new HttpClient();
+            using var request = new HttpRequestMessage(HttpMethod.Post, api);
 
-            using (HttpClient client = new HttpClient())
-            {
-                using (HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, api))
-                {
-                    request.Headers.Add("Ocp-Apim-Subscription-Key", key);
-                    request.Headers.Add("Ocp-Apim-Subscription-Region", region);
+            request.Headers.Add("Ocp-Apim-Subscription-Key", key);
+            request.Headers.Add("Ocp-Apim-Subscription-Region", region);
 
-                    // five seconds for timeout
-                    client.Timeout = new TimeSpan(0, 0, 5);
-                    var body = new object[] { new { Text = textToTranslate } };
-                    var requestBody = JsonConvert.SerializeObject(body);    
+            client.Timeout = TimeSpan.FromSeconds(5);
 
-                    request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+            var body = new[] { new { Text = textToTranslate } };
+            var requestBody = JsonConvert.SerializeObject(body);
 
-                    var response = await client.SendAsync(request);
+            request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
 
-                    if (response.IsSuccessStatusCode)
-                        result = await response.Content.ReadAsStringAsync();
-                }
-            }
+            var response = await client.SendAsync(request);
+            var result = string.Empty;
+
+            if (response.IsSuccessStatusCode)
+                result = await response.Content.ReadAsStringAsync();
+
             return result;
         }
 
         /// <summary>
         /// Check this content at:https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-reference
         /// </summary>
-        static void Main()
+        static async Task Main()
         {
             var host = "https://api.cognitive.microsofttranslator.com";
             var route = "/translate?api-version=3.0&to=es";
@@ -54,7 +51,7 @@ namespace Cognitive
                 Console.WriteLine("Please, informe your region: ");
                 region = Console.ReadLine();
             }
-            var translatedSentence = PostAPI(host + route, subscriptionKey, region, "Hello World!").Result;
+            var translatedSentence = await PostAPI(host + route, subscriptionKey, region, "Hello World!");
             Console.WriteLine(translatedSentence);
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();

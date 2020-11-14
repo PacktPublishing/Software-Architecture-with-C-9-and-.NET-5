@@ -16,51 +16,67 @@ namespace CodeMetricsBadCode
             {
                 case "A":
                     if (billingMode == "M1")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "B":
                     if (billingMode == "M2")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "C":
                     if (billingMode == "M3")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "D":
                     if (billingMode == "M4")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "E":
                     if (billingMode == "M5")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "F":
                     if (billingMode == "M6")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 case "G":
                     if (billingMode == "M7")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
-                case "S":
+                case "H":
                     if (billingMode == "M8")
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     else
-                        Console.WriteLine($"Billing Mode {billingMode} for Message Response {messageResponse}");
+                        Console.WriteLine($"Billing Mode {billingMode} for " +
+                            $"Message Response {messageResponse}");
                     break;
                 default:
                     Console.WriteLine("The result of processing is unknown");
