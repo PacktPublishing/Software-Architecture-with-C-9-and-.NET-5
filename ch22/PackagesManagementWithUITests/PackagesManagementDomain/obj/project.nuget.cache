@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QSwmZYDHOYopmjbmwVCmgX6OmcOtNwuoCDvS1YEI+Ogu12yxVyUSs3z0uf7q3YLcvKCSyEAqRuiVVpIruIenbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Documents\\New Book\\Code\\Tests\\PackagesManagementWithUITests\\PackagesManagementDomain\\PackagesManagementDomain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
