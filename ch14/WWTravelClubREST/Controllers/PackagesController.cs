@@ -41,9 +41,9 @@ namespace WWTravelClubREST.Controllers
                     .ToListAsync();
                 return Ok(res);
             }
-            catch
+            catch (Exception err)
             {
-                return StatusCode(500);
+                return StatusCode(500, err);
             }
         }
     }

@@ -51,6 +51,7 @@ namespace WWTravelClubREST
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseHsts();
 
             app.UseHttpsRedirection();
 
