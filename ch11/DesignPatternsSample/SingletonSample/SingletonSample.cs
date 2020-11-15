@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatternsSample.SingletonSample
 {
@@ -9,15 +7,9 @@ namespace DesignPatternsSample.SingletonSample
     {
         #region This is the Singleton definition
         private static SingletonDemo _instance;
-        public static SingletonDemo Current
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new SingletonDemo();
-                return _instance;
-            }
-        }
+
+        public static SingletonDemo Current => _instance ??= new SingletonDemo();
+        
         #endregion
 
         public string Message { get; set; }

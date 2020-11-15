@@ -4,8 +4,10 @@ using DesignPatternsSample.CommandSample.Invoker;
 using DesignPatternsSample.CommandSample.Receiver;
 using DesignPatternsSample.DependencyInjectionSample.Concrete;
 using DesignPatternsSample.FactorySample.ConcreteCreator;
+using DesignPatternsSample.FactorySample.Enums;
 using DesignPatternsSample.FactorySample.ProductInterface;
 using DesignPatternsSample.ProxySample.Proxy;
+using DesignPatternsSample.ProxySample.Subject;
 using DesignPatternsSample.SingletonSample;
 using System;
 using System.Threading;
@@ -19,39 +21,27 @@ namespace DesignPatternsSample
             #region Builder Sample
             Console.WriteLine("Builder Sample");
 
-            var directorRoom = new DirectorRooms(new SimpleRoomBuilder());
-            var simpleRoom = directorRoom.Construct();
+            var simpleRoom = new SimpleRoomBuilder().Build();
             simpleRoom.Describe();
-
-            directorRoom = new DirectorRooms(new FamilyRoomBuilder());
-            var familyRoom = directorRoom.Construct();
+            
+            var familyRoom = new FamilyRoomBuilder().Build();
             familyRoom.Describe();
             #endregion
 
             #region Factory Sample
-            var psCretor = new PaymentServiceCreator();
 
-            var brazilianPaymentService = (IPaymentService)psCretor.Factory
-                (PaymentServiceCreator.ServicesAvailable.Brazilian);
-            brazilianPaymentService.EmailToCharge = "gabriel@sample.com";
-            brazilianPaymentService.MoneyToCharge = 178.90f;
-            brazilianPaymentService.OptionToCharge =
-                FactorySample.Enums.EnumChargingOptions.CreditCard;
-            brazilianPaymentService.ProcessCharging();
+            ProcessCharging(PaymentServiceFactory.ServicesAvailable.Brazilian,
+                "gabriel@sample.com", 178.90f, EnumChargingOptions.CreditCard);
 
-            var italianPaymentService = (IPaymentService)psCretor.Factory
-                (PaymentServiceCreator.ServicesAvailable.Italian);
-            italianPaymentService.EmailToCharge = "francesco@sample.com";
-            italianPaymentService.MoneyToCharge = 188.70f;
-            italianPaymentService.OptionToCharge =
-                FactorySample.Enums.EnumChargingOptions.DebitCard;
-            italianPaymentService.ProcessCharging();
+            ProcessCharging(PaymentServiceFactory.ServicesAvailable.Italian,
+                "francesco@sample.com", 188.70f, EnumChargingOptions.DebitCard);
 
             #endregion
 
             #region Singleton Sample
             Console.WriteLine("Singleton Sample");
-            SingletonDemo.Current.Message = "This text will be printed by the singleton.";
+            SingletonDemo.Current.Message = "This text will be printed by " +
+                "the singleton.";
             SingletonDemo.Current.Print();
             #endregion
             
@@ -66,14 +56,7 @@ namespace DesignPatternsSample
             
             #region Proxy Sample
             Console.WriteLine("Proxy Sample");
-            var roomPicture = new ProxyRoomPicture();
-            Console.WriteLine($"Picture Id: {roomPicture.Id}");
-            Console.WriteLine($"Picture FileName: {roomPicture.FileName}");
-            Console.WriteLine($"Tags: {string.Join(";", roomPicture.Tags)}");
-            Console.WriteLine($"1st call: Picture Data");
-            Console.WriteLine($"Image: {roomPicture.PictureData}");
-            Console.WriteLine($"2nd call: Picture Data");
-            Console.WriteLine($"Image: {roomPicture.PictureData}");
+            ExecuteProxySample(new ProxyRoomPicture());
             #endregion
 
             #region Command Sample
@@ -140,6 +123,28 @@ namespace DesignPatternsSample
             #endregion
 
             Console.ReadKey();
+        }
+
+        private static void ExecuteProxySample(IRoomPicture roomPicture)
+        {
+            Console.WriteLine($"Picture Id: {roomPicture.Id}");
+            Console.WriteLine($"Picture FileName: {roomPicture.FileName}");
+            Console.WriteLine($"Tags: {string.Join(";", roomPicture.Tags)}");
+            Console.WriteLine($"1st call: Picture Data");
+            Console.WriteLine($"Image: {roomPicture.PictureData}");
+            Console.WriteLine($"2nd call: Picture Data");
+            Console.WriteLine($"Image: {roomPicture.PictureData}");
+        }
+
+        private static void ProcessCharging(PaymentServiceFactory.ServicesAvailable serviceToCharge, 
+            string emailToCharge, float moneyToCharge, EnumChargingOptions optionToCharge)
+        {
+            PaymentServiceFactory factory = new PaymentServiceFactory();
+            var service = factory.Create(serviceToCharge);
+            service.EmailToCharge = emailToCharge;
+            service.MoneyToCharge = moneyToCharge;
+            service.OptionToCharge = optionToCharge;
+            service.ProcessCharging();
         }
     }
 }

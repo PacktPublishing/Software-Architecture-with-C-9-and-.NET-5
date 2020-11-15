@@ -42,3 +42,4 @@ C:\Book\ch11\GenericHost\obj\Debug\net5.0\GenericHost.dll
 C:\Book\ch11\GenericHost\obj\Debug\net5.0\ref\GenericHost.dll
 C:\Book\ch11\GenericHost\obj\Debug\net5.0\GenericHost.pdb
 C:\Book\ch11\GenericHost\obj\Debug\net5.0\GenericHost.genruntimeconfig.cache
+C:\Book\ch11\GenericHost\obj\Debug\net5.0\GenericHost.csprojAssemblyReference.cache

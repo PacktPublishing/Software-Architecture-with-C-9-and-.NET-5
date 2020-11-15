@@ -1,8 +1,6 @@
 ﻿using DesignPatternsSample.FactorySample.Enums;
 using DesignPatternsSample.FactorySample.ProductInterface;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatternsSample.FactorySample.ConcreteProduct
 {

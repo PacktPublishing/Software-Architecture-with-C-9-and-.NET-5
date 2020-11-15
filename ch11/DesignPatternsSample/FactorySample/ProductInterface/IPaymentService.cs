@@ -1,11 +1,8 @@
 ﻿using DesignPatternsSample.FactorySample.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatternsSample.FactorySample.ProductInterface
 {
-    public interface IPaymentService : IFactoryProduct
+    public interface IPaymentService 
     {
         /// <summary>
         /// E-mail of the person who will be charged

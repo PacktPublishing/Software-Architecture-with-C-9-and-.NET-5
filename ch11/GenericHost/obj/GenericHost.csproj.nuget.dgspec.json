@@ -48,51 +48,51 @@
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.CommandLine": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.EnvironmentVariables": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Logging.Configuration": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -110,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.1.20452.10\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

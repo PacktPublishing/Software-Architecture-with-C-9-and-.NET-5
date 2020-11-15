@@ -1,38 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPatternsSample.BuilderSample.DirectorRooms">
-    <Position X="5.25" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BuilderSample\Director\DirectorRooms.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="DesignPatternsSample.BuilderSample.FamilyRoomBuilder" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="2.75" Width="1.5" />
+    <Position X="8.5" Y="4.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AABIAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>BuilderSample\ConcreteBuilder\FamilyRoomBuilder.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="roomToReturn" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatternsSample.BuilderSample.SimpleRoomBuilder" BaseTypeListCollapsed="true">
-    <Position X="10" Y="2.75" Width="1.5" />
+    <Position X="6.25" Y="4.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AABIAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>BuilderSample\ConcreteBuilder\SimpleRoomBuilder.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="roomToReturn" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatternsSample.BuilderSample.Room">
-    <Position X="12" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAEACA=</HashCode>
+      <HashCode>AAQAIAAAAAAAAAgQAAAAABAAAAAAAAAAAAAAAAgABAA=</HashCode>
       <FileName>BuilderSample\Product\Room.cs</FileName>
     </TypeIdentifier>
   </Class>
