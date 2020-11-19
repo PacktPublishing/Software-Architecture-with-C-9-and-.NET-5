@@ -1,0 +1,16 @@
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.exe
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.deps.json
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.runtimeconfig.json
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.runtimeconfig.dev.json
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.dll
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\ref\SampleCodeChapter19.dll
+C:\Book\ch19\SampleCodeChapter19\bin\Debug\net5.0\SampleCodeChapter19.pdb
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.csprojAssemblyReference.cache
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.AssemblyInfoInputs.cache
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.AssemblyInfo.cs
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.csproj.CoreCompileInputs.cache
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.dll
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\ref\SampleCodeChapter19.dll
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.pdb
+C:\Book\ch19\SampleCodeChapter19\obj\Debug\net5.0\SampleCodeChapter19.genruntimeconfig.cache
