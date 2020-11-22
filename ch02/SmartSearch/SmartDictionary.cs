@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace SmartSearch
 {
-    public class SmartDDictionary<T>
+    public class SmartDictionary<T>
     {
         private List<T> allItems;
         private Func<T, string> keyAccessor;
@@ -15,7 +14,7 @@ namespace SmartSearch
             public double Penalty=0;
             public int FoundChars=0;
         }
-        public SmartDDictionary(Func<T, string> keyAccessor, IEnumerable<T> allItems)
+        public SmartDictionary(Func<T, string> keyAccessor, IEnumerable<T> allItems)
         {
             if (allItems == null) throw new ArgumentNullException(nameof(allItems));
             this.keyAccessor = keyAccessor ?? throw new ArgumentNullException(nameof(keyAccessor));
@@ -62,6 +61,7 @@ namespace SmartSearch
                 
                 }
                 else x.Penalty += index*1000;
+
                 if (index + 1 < destination.Length)
                     destination = destination.Substring(index + 1);
                 else
@@ -72,7 +72,7 @@ namespace SmartSearch
         public IEnumerable<T> Search(string search, int maxItems)
         {
             if (search == null) throw new ArgumentNullException(nameof(search));
-            if (maxItems <=0) throw new ArgumentException(nameof(maxItems));
+            if (maxItems <=0) throw new ArgumentException($"{nameof(maxItems)} must be greater than zero", nameof(maxItems));
             var pres = Rate(search);
             Array.Sort(pres, new Comparison<Rater>((x, y) => 
             {
