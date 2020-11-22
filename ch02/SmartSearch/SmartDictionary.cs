@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace SmartSearch
 {
-    public class SmartDDictionary<T>
+    public class SmartDictionary<T>
     {
         private List<T> allItems;
         private Func<T, string> keyAccessor;
@@ -15,7 +15,7 @@ namespace SmartSearch
             public double Penalty=0;
             public int FoundChars=0;
         }
-        public SmartDDictionary(Func<T, string> keyAccessor, IEnumerable<T> allItems)
+        public SmartDictionary(Func<T, string> keyAccessor, IEnumerable<T> allItems)
         {
             if (allItems == null) throw new ArgumentNullException(nameof(allItems));
             this.keyAccessor = keyAccessor ?? throw new ArgumentNullException(nameof(keyAccessor));
