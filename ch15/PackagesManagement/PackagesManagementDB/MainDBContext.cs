@@ -63,7 +63,7 @@ namespace PackagesManagementDB
                     entry.State = EntityState.Detached;                   
                          
                 }
-                throw ex;
+                throw;
             }
             
         }
@@ -73,14 +73,16 @@ namespace PackagesManagementDB
             await Database.BeginTransactionAsync();
         }
 
-        public async Task CommitAsync()
+        public  Task CommitAsync()
         {
             Database.CommitTransaction();
+            return Task.CompletedTask;
         }
 
-        public async Task RollbackAsync()
+        public  Task RollbackAsync()
         {
             Database.RollbackTransaction();
+            return Task.CompletedTask;
         }
     }
 }

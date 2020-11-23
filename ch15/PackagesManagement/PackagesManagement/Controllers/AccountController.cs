@@ -48,7 +48,6 @@ namespace PackagesManagement.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 await HttpContext.SignOutAsync();
-                return View(model);
             }
             if (ModelState.IsValid)
             {

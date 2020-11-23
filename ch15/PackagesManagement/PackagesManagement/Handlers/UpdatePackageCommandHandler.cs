@@ -13,8 +13,8 @@ namespace PackagesManagement.Handlers
 {
     public class UpdatePackageCommandHandler : ICommandHandler<UpdatePackageCommand>
     {
-        IPackageRepository repo;
-        IEventMediator mediator;
+        private readonly IPackageRepository repo;
+        private readonly IEventMediator mediator;
         public UpdatePackageCommandHandler(IPackageRepository repo, IEventMediator mediator)
         {
             this.repo = repo;
@@ -23,7 +23,7 @@ namespace PackagesManagement.Handlers
         public async Task HandleAsync(UpdatePackageCommand command)
         {
             bool done = false;
-            IPackage model = null;
+            IPackage model;
             while (!done)
             {
                 try
@@ -37,7 +37,7 @@ namespace PackagesManagement.Handlers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-
+                    //add here some logging
                 }
             }
         }

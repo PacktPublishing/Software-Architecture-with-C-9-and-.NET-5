@@ -15,9 +15,9 @@ namespace PackagesManagementDomain.Events
             OldVersion = oldVersion;
             NewVersion = newVersion;
         }
-        public int PackageId { get; private set; }
-        public decimal NewPrice { get; private set; }
-        public long OldVersion { get; private set; }
-        public long NewVersion { get; private set; }
+        public int PackageId { get; }
+        public decimal NewPrice { get; }
+        public long OldVersion { get; }
+        public long NewVersion { get; }
     }
 }

@@ -9,7 +9,7 @@ namespace PackagesManagementBlazor.Server.Queries
 {
     public class PackagesListByLocationQuery:IPackagesListByLocationQuery
     {
-        MainDbContext ctx;
+        private readonly MainDbContext ctx;
         public PackagesListByLocationQuery(MainDbContext ctx)
         {
             this.ctx = ctx;
