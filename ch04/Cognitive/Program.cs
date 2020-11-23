@@ -24,12 +24,10 @@ namespace Cognitive
             request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
 
             var response = await client.SendAsync(request);
-            var result = string.Empty;
 
-            if (response.IsSuccessStatusCode)
-                result = await response.Content.ReadAsStringAsync();
+            response.EnsureSuccessStatusCode();
 
-            return result;
+            return await response.Content.ReadAsStringAsync();
         }
 
         /// <summary>
@@ -43,12 +41,12 @@ namespace Cognitive
             var region = "[YOUR REGION HERE]";
             if (subscriptionKey == "[YOUR KEY HERE]")
             {
-                Console.WriteLine("Please, informe your key: ");
+                Console.WriteLine("Please, enter your key: ");
                 subscriptionKey = Console.ReadLine();
             }
             if (region  == "[YOUR REGION HERE]")
             {
-                Console.WriteLine("Please, informe your region: ");
+                Console.WriteLine("Please, enter your region: ");
                 region = Console.ReadLine();
             }
             var translatedSentence = await PostAPI(host + route, subscriptionKey, region, "Hello World!");
