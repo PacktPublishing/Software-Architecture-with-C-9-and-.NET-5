@@ -1,7 +1,4 @@
 ﻿using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
@@ -11,9 +8,9 @@ namespace GenericHost
     class HostedService : IHostedService
     {
         private readonly ILogger _logger;
-        private readonly IApplicationLifetime _appLifetime;
+        private readonly IHostApplicationLifetime _appLifetime;
 
-        public HostedService(ILogger<HostedService> logger, IApplicationLifetime appLifetime)
+        public HostedService(ILogger<HostedService> logger, IHostApplicationLifetime appLifetime)
         {
             _logger = logger;
             _appLifetime = appLifetime;
