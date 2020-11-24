@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CodeReuseLibrary
+﻿namespace CodeReuseLibrary
 {
     public class EvaluationService
     {
-        public IContentEvaluated content { get; set; }
-        public int CalculateEvaluationAverage()
-        {
-            return 0;
-        }
+        public IContentEvaluated Content { get; set; }
+        public int CalculateEvaluationAverage() =>
+            0;
     }
 }
