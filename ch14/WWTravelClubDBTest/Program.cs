@@ -26,7 +26,7 @@ namespace WWTravelClubDBTest
                     Name = "Summer in Florence",
                     StartValidityDate = new DateTime(2019, 6, 1),
                     EndValidityDate = new DateTime(2019, 10, 1),
-                    DuratioInDays=7,
+                    DurationInDays=7,
                     Price=1000
                 },
                 new Package
@@ -34,7 +34,7 @@ namespace WWTravelClubDBTest
                     Name = "Winter in Florence",
                     StartValidityDate = new DateTime(2019, 12, 1),
                     EndValidityDate = new DateTime(2020, 2, 1),
-                    DuratioInDays=7,
+                    DurationInDays=7,
                     Price=500
                 }
             }
@@ -74,7 +74,7 @@ namespace WWTravelClubDBTest
                     StartValidityDate=m.StartValidityDate,
                     EndValidityDate=m.EndValidityDate,
                     Name=m.Name,
-                    DuratioInDays=m.DuratioInDays,
+                    DurationInDays=m.DurationInDays,
                     Id=m.Id,
                     Price=m.Price,
                     DestinationName=m.MyDestination.Name,
