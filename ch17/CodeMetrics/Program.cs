@@ -9,6 +9,23 @@ namespace CodeMetricsBadCode
     class Program
     {
         static void Main()
+        {   
+            CyclomaticComplexitySample();
+            SampleDepthOfInheritance();
+            CodeWithNoTryCatch("a");
+            CodeWithEmptyTryCatch("a");
+            CodeWithCorrectTryCatch("a");
+            CodeWithIncorrectFileStreamManagement();
+            CorrectFileStreamManagementFirstOption();
+            CorrectFileStreamManagementSecondOption();
+            CorrectFileStreamManagementThirdOption();
+        }
+
+        /// <summary>
+        /// This code is being used just for explaning the concept of cyclomatic complexity. 
+        /// It makes no sense at all. Please Calculate Code Metrics for understanding 
+        /// </summary>
+        private static void CyclomaticComplexitySample()
         {
             var billingMode = GetBillingMode();
             var messageResponse = ProcessCreditCardMethod();
@@ -82,24 +99,10 @@ namespace CodeMetricsBadCode
                     Console.WriteLine("The result of processing is unknown");
                     break;
             }
-            SampleDepthOfInheritance();
-            CodeWithNoTryCatch("a");
-            CodeWithEmptyTryCatch("a");
-            CodeWithCorrectTryCatch("a");
-            CodeWithIncorrectFileStreamManagement();
-            CodeWithCorrectFileStreamManagementFirstOption();
-            CodeWithCorrectFileStreamManagementSecondOption();
+
         }
 
-        private static void CodeWithCorrectFileStreamManagementFirstOption()
-        {
-            using (FileStream file = new FileStream("C:\\file.txt", FileMode.CreateNew))
-            {
-                byte[] data = GetFileData();
-                file.Write(data, 0, data.Length);
-            }
-        }
-        private static void CodeWithCorrectFileStreamManagementSecondOption()
+        private static void CorrectFileStreamManagementFirstOption()
         {
             FileStream file = new FileStream("C:\\file.txt", FileMode.CreateNew);
             try
@@ -112,6 +115,22 @@ namespace CodeMetricsBadCode
                 file.Dispose();
             }
         }
+        private static void CorrectFileStreamManagementSecondOption()
+        {
+            using (FileStream file = new FileStream("C:\\file.txt", FileMode.CreateNew))
+            {
+                byte[] data = GetFileData();
+                file.Write(data, 0, data.Length);
+            }
+        }
+
+        private static void CorrectFileStreamManagementThirdOption()
+        {
+            using FileStream file = new FileStream("C:\\file.txt", FileMode.CreateNew);
+            byte[] data = GetFileData();
+            file.Write(data, 0, data.Length);
+        }
+        
         private static void CodeWithIncorrectFileStreamManagement()
         {
             FileStream file = new FileStream("C:\\file.txt", FileMode.CreateNew);
@@ -131,7 +150,7 @@ namespace CodeMetricsBadCode
             {
                 return Convert.ToInt32(textToConvert);
             }
-            catch (Exception err)
+            catch (FormatException err)
             {
                 Logger.GenerateLog(err);
                 return 0;
