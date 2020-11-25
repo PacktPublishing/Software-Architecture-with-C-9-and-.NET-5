@@ -2,24 +2,23 @@ name: .NET Core Chapter 21
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.100-preview.3.20216.6
-    - name: Install dependencies
-      run: dotnet restore ./ch21
-    - name: Build
-      run: dotnet build ./ch21 --configuration Release --no-restore
-    - name: Test
-      run: dotnet test ./ch21 --no-restore --verbosity normal
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Install dependencies
+        run: dotnet restore ./ch21
+      - name: Build
+        run: dotnet build ./ch21 --configuration Release --no-restore
+      - name: Test
+        run: dotnet test ./ch21 --no-restore --verbosity normal
