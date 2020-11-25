@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace dotNetStandardLibrary
 {
@@ -13,12 +10,12 @@ namespace dotNetStandardLibrary
     /// create the evaluated content
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class EvaluationService<T> where T: IContentEvaluated
+    public class EvaluationService<T> where T : IContentEvaluated
     {
         /// <summary>
         /// The content is generic and totatly managed by the class
         /// </summary>
-        public T content { get; set; }
+        public T Content { get; set; }
 
         /// <summary>
         /// The creation of the content to be evaluated will use reflection and the
@@ -30,28 +27,23 @@ namespace dotNetStandardLibrary
         public EvaluationService()
         {
             var name = GetTypeOfEvaluation();
-            content = (T)Assembly.GetExecutingAssembly().CreateInstance(name);
+            Content = (T)Assembly.GetExecutingAssembly().CreateInstance(name);
         }
 
         /// <summary>
         /// This method is just used to get the type name of the generic one defined
         /// </summary>
         /// <returns></returns>
-        public string GetTypeOfEvaluation()
-        {
-            var nome = typeof(T).FullName;
-            return nome;
-        }
+        public string GetTypeOfEvaluation() =>
+            typeof(T).FullName;
 
         /// <summary>
         /// No matter the Evaluation, the calculation will always get values from the method CalculateGrade
         /// </summary>
         /// <returns>The average of the grade from Evaluations</returns>
-        public double CalculateEvaluationAverage()
-        {
-            return content.Evaluations
+        public double CalculateEvaluationAverage() =>
+            Content.Evaluations
                 .Select(x => x.CalculateGrade())
                 .Average();
-        }
     }
 }
