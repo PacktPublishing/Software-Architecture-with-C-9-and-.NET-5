@@ -10,7 +10,7 @@ namespace PackagesManagement.Queries
 {
     public class PackagesListQuery:IPackagesListQuery
     {
-        MainDbContext ctx;
+        private readonly MainDbContext ctx;
         public PackagesListQuery(MainDbContext ctx)
         {
             this.ctx = ctx;

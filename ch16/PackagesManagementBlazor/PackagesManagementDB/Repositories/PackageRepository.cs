@@ -14,7 +14,7 @@ namespace PackagesManagementDB.Repositories
 {
     public class PackageRepository : IPackageRepository
     {
-        private MainDbContext context;
+        private readonly MainDbContext context;
         public PackageRepository(MainDbContext context)
         {
             this.context = context;
@@ -29,11 +29,11 @@ namespace PackagesManagementDB.Repositories
         public async Task<IPackage> Delete(int id)
         {
             var model = await Get(id);
-            if (model == null) return null;
-            context.Packages.Remove(model as Package);
+            if (model is not Package package) return null;
+            context.Packages.Remove(package);
             model.AddDomainEvent(
-                new PackageDeleteEvent(
-                    model.Id, (model as Package).EntityVersion));
+               new PackageDeleteEvent(
+                    model.Id, package.EntityVersion));
             return model;
         }
         public IPackage New()

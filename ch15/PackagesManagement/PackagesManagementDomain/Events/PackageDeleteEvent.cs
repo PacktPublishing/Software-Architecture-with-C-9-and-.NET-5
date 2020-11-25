@@ -13,8 +13,8 @@ namespace PackagesManagementDomain.Events
             PackageId = id;
             OldVersion = oldVersion;
         }
-        public int PackageId { get; private set; }
-        public long OldVersion { get; private set; }
+        public int PackageId { get; }
+        public long OldVersion { get; }
         
     }
 }
