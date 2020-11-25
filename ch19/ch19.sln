@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationSample", "WebApplicationSample\WebApplicationSample.csproj", "{AB077D07-838B-465C-9647-04ADCF00D0F5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCodeChapter19", "SampleCodeChapter19\SampleCodeChapter19.csproj", "{987F7EDD-B01F-4340-A876-08977A0157CC}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB077D07-838B-465C-9647-04ADCF00D0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB077D07-838B-465C-9647-04ADCF00D0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB077D07-838B-465C-9647-04ADCF00D0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB077D07-838B-465C-9647-04ADCF00D0F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{987F7EDD-B01F-4340-A876-08977A0157CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{987F7EDD-B01F-4340-A876-08977A0157CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{987F7EDD-B01F-4340-A876-08977A0157CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
