@@ -32,7 +32,7 @@ namespace WWTravelClubREST.Controllers
                         StartValidityDate = m.StartValidityDate,
                         EndValidityDate = m.EndValidityDate,
                         Name = m.Name,
-                        DuratioInDays = m.DuratioInDays,
+                        DurationInDays = m.DurationInDays,
                         Id = m.Id,
                         Price = m.Price,
                         DestinationName = m.MyDestination.Name,
