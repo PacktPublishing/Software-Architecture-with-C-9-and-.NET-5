@@ -2,9 +2,6 @@
 using PackagesManagementDomain.Aggregates;
 using PackagesManagementDomain.Events;
 using PackagesManagementDomain.IRepositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace PackagesManagement.Handlers
@@ -17,9 +14,10 @@ namespace PackagesManagement.Handlers
         {
             this.repo = repo;
         }
-        public async Task HandleAsync(PackagePriceChangedEvent ev)
+        public Task HandleAsync(PackagePriceChangedEvent ev)
         {
             repo.New(PackageEventType.CostChanged, ev.PackageId, ev.OldVersion, ev.NewVersion, ev.NewPrice);
+            return Task.CompletedTask;
         }
     }
 }
