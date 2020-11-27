@@ -15,8 +15,8 @@ namespace DDD.ApplicationLayer
             where T : IEventNotification
             where H : class, IEventHandler<T>
         {
-            services.AddScoped<H>();
             services.TryAddScoped(typeof(EventTrigger<>));
+            services.AddScoped<IEventHandler<T>, H>();
 
             return services;
         }
