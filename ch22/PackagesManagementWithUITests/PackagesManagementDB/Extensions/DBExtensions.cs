@@ -1,19 +1,17 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using DDD.DomainLayer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using PackagesManagementDB.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using DDD.DomainLayer;
 
 namespace PackagesManagementDB.Extensions
 {
     public static class DBExtensions
     {
-        public static IServiceCollection AddDbLayer(this IServiceCollection services, 
+        public static IServiceCollection AddDbLayer(this IServiceCollection services,
             string connectionString, string migrationAssembly)
         {
             services.AddDbContext<MainDbContext>(options =>
@@ -24,23 +22,15 @@ namespace PackagesManagementDB.Extensions
             services.AddAllRepositories(typeof(DBExtensions).Assembly);
             return services;
         }
-        public static async void UseDBLayer(this IApplicationBuilder app, IServiceProvider serviceProvider)
-        {
-            using (var serviceScope = serviceProvider.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                var context = serviceScope.ServiceProvider.GetService<MainDbContext>();
-                context.Database.Migrate();
-                await Seed(context, serviceScope);
 
-            }
-        }
-        private static async Task Seed(MainDbContext context, IServiceScope serviceScope)
+        public static async Task Seed(this MainDbContext context, IServiceScope serviceScope)
         {
-            
-           if (!await context.Roles.AnyAsync())
+            await context.Database.MigrateAsync();
+
+            if (!await context.Roles.AnyAsync())
             {
                 var roleManager = serviceScope.ServiceProvider.GetService<RoleManager<IdentityRole<int>>>();
-                var role = new IdentityRole<int> { Name = "Admins"};
+                var role = new IdentityRole<int> { Name = "Admins" };
                 await roleManager.CreateAsync(role);
 
             }
@@ -88,6 +78,6 @@ namespace PackagesManagementDB.Extensions
                 await context.SaveChangesAsync();
             }
         }
-        
+
     }
 }
