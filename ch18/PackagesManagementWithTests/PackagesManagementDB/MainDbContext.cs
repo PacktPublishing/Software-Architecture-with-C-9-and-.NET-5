@@ -1,15 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using DDD.DomainLayer;
+﻿using DDD.DomainLayer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using PackagesManagementDB.Models;
+using System.Threading.Tasks;
 
 namespace PackagesManagementDB
 {
-    public class MainDbContext: IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>, IUnitOfWork
+    public class MainDbContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>, IUnitOfWork
     {
         public DbSet<Package> Packages { get; set; }
         public DbSet<Destination> Destinations { get; set; }
@@ -48,9 +46,9 @@ namespace PackagesManagementDB
 
         public async Task<bool> SaveEntitiesAsync()
         {
-            
-            
-            
+
+
+
             try
             {
                 return await SaveChangesAsync() > 0;
@@ -60,12 +58,12 @@ namespace PackagesManagementDB
                 foreach (var entry in ex.Entries)
                 {
 
-                    entry.State = EntityState.Detached;                   
-                         
+                    entry.State = EntityState.Detached;
+
                 }
-                throw ex;
+                throw;
             }
-            
+
         }
 
         public async Task StartAsync()
@@ -73,14 +71,16 @@ namespace PackagesManagementDB
             await Database.BeginTransactionAsync();
         }
 
-        public async Task CommitAsync()
+        public Task CommitAsync()
         {
             Database.CommitTransaction();
+            return Task.CompletedTask;
         }
 
-        public async Task RollbackAsync()
+        public Task RollbackAsync()
         {
             Database.RollbackTransaction();
+            return Task.CompletedTask;
         }
     }
 }

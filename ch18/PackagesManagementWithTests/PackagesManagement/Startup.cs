@@ -1,18 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 using DDD.ApplicationLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PackagesManagement.Queries;
 using PackagesManagementDB.Extensions;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace PackagesManagement
 {
@@ -46,8 +41,7 @@ namespace PackagesManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, 
-            IWebHostEnvironment env, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -69,8 +63,8 @@ namespace PackagesManagement
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
-            var ci = new CultureInfo("en-US");            
+
+            var ci = new CultureInfo("en-US");
 
             // Configure the Localization middleware
             app.UseRequestLocalization(new RequestLocalizationOptions
@@ -80,7 +74,7 @@ namespace PackagesManagement
                 {
                     ci,
                 },
-                            SupportedUICultures = new List<CultureInfo>
+                SupportedUICultures = new List<CultureInfo>
                 {
                     ci,
                 }
@@ -93,7 +87,6 @@ namespace PackagesManagement
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
-            app.UseDBLayer(serviceProvider);
         }
     }
 }
