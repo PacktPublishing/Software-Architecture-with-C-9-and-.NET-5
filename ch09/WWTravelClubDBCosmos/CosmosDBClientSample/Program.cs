@@ -10,16 +10,14 @@ namespace CosmosDBClientSample
         private const string endpoint = "insert here your account URL";
         private const string key = "insert here your key";
 
-        private readonly string databaseId = "WWTravelClub";
-        private readonly string containerId = "admin";
+        private const string databaseId = "WWTravelClub";
+        private const string containerId = "admin";
 
         public static async Task Main()
         {
             try
             {
-                Program p = new Program();
-                await p.CreateCosmosDB();
-
+                await CreateCosmosDB();
             }
             catch (CosmosException de)
             {
@@ -36,48 +34,45 @@ namespace CosmosDBClientSample
             }
         }
 
-        public async Task CreateCosmosDB()
+        public static async Task CreateCosmosDB()
         {
-            using (var cosmosClient = new CosmosClient(endpoint, key))
-            {
-                Database database = await cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
-                ContainerProperties cp = new ContainerProperties(containerId, "/DestinationName");
-                Container container = await database.CreateContainerIfNotExistsAsync(cp);
-                await AddItemsToContainerAsync(container);
-            }
+            using var cosmosClient = new CosmosClient(endpoint, key);
+            Database database = await cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
+            ContainerProperties cp = new ContainerProperties(containerId, "/DestinationName");
+            Container container = await database.CreateContainerIfNotExistsAsync(cp);
+            await AddItemsToContainerAsync(container);
         }
 
 
-        private async Task AddItemsToContainerAsync(Container container)
+        private static async Task AddItemsToContainerAsync(Container container)
         {
-            Destination destinationToAdd = new Destination()
+            var destinationToAdd = new Destination
             {
                 Id = "1",
                 Country = "Brazil",
                 DestinationName = "São Paulo",
                 Description = "The biggest city in Brazil",
-                Packages = new Package[]
+                Packages = new[]
                 {
-                new Package()
-                {
-                    Id = "1",
-                    Description = "Visit Paulista Avenue",
-                    DuratioInDays = 3,
-                    Price = 5000,
-                }
+                    new Package
+                    {
+                        Id = "1",
+                        Description = "Visit Paulista Avenue",
+                        DurationInDays = 3,
+                        Price = 5000,
+                    }
                 }
             };
 
 
             try
             {
-                ItemResponse<Destination> destination = await container.ReadItemAsync<Destination>(destinationToAdd.Id, new PartitionKey(destinationToAdd.DestinationName));
+                await container.ReadItemAsync<Destination>(destinationToAdd.Id, new PartitionKey(destinationToAdd.DestinationName));
             }
             catch (CosmosException ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
             {
                 // Create an item in the container representing the Andersen family. Note we provide the value of the partition key for this item, which is "Andersen"
-                ItemResponse<Destination> destination = await container.CreateItemAsync<Destination>(destinationToAdd, new PartitionKey(destinationToAdd.DestinationName));
-
+                await container.CreateItemAsync<Destination>(destinationToAdd, new PartitionKey(destinationToAdd.DestinationName));
             }
         }
     }
@@ -103,7 +98,7 @@ namespace CosmosDBClientSample
 
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public int DuratioInDays { get; set; }
+        public int DurationInDays { get; set; }
         public DateTime? StartValidityDate { get; set; }
         public DateTime? EndValidityDate { get; set; }
         public Destination MyDestination { get; set; }
