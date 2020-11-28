@@ -18,7 +18,7 @@ namespace PackagesManagement.Models.Packages
             Name = o.Name;
             Description = o.Description;
             Price = o.Price;
-            DuratioInDays = o.DuratioInDays;
+            DurationInDays = o.DurationInDays;
             StartValidityDate = o.StartValidityDate;
             EndValidityDate = o.EndValidityDate;
         }
@@ -34,7 +34,7 @@ namespace PackagesManagement.Models.Packages
         public decimal Price { get; set; }
         [Display(Name = "duration in days")]
         [Range(1, 90)]
-        public int DuratioInDays { get; set; }
+        public int DurationInDays { get; set; }
         [Display(Name = "available from"), Required]
         public DateTime? StartValidityDate { get; set; }
         [Display(Name = "available to"), Required]
