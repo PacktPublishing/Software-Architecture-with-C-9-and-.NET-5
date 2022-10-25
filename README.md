@@ -20,3 +20,7 @@ Finally, you will discover software design patterns and various software approac
 6. Understand when it is best to use test-driven development (TDD) as an approach for software development
 7. Write automated functional test cases
 8. Get the best of DevOps principles to enable CI/CD environments
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800566040">https://packt.link/free-ebook/9781800566040 </a> </p>
